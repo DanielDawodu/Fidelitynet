@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fidellitynetglobalservices.online/sitemap.xml
