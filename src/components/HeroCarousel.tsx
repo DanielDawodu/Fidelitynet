@@ -36,7 +36,7 @@ export default function HeroCarousel({ slides, onSlideChange }: HeroCarouselProp
         onSlideChange?.(next);
         return next;
       });
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [isPaused, prefersReducedMotion, slides.length, onSlideChange]);

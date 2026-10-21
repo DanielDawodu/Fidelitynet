@@ -51,7 +51,7 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative container mx-auto px-4 lg:px-8 py-20">
-          <div className="max-w-3xl">
+          <div className="max-w-4xl mx-auto text-center">
             <p className="text-gold font-semibold text-sm md:text-base uppercase tracking-widest mb-4 animate-slide-up">
               {COMPANY_INFO.name}
             </p>
@@ -61,10 +61,10 @@ export default function Home() {
             <p className="text-subtitle text-gray-100 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
               Practical solutions for compliance, real estate, construction, training and business support.
             </p>
-            <p className="text-base text-gray-200 mb-10 max-w-2xl animate-slide-up" style={{ animationDelay: '0.3s' }}>
+            <p className="text-base text-gray-200 mb-10 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.3s' }}>
               {COMPANY_INFO.name} works with individuals, businesses, property owners and organisations to understand their requirements and provide practical, professional services tailored to their needs.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 animate-slide-up" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
               <Link to="/services">
                 <Button variant="gold" size="lg" icon={<ArrowRight className="w-5 h-5" />}>
                   Explore Our Services
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
             <a
               href={CONTACT_LINKS.whatsapp}
-              className="inline-flex items-center space-x-2 mt-8 text-gold hover:text-yellow-400 transition-colors animate-slide-up"
+              className="inline-flex items-center justify-center space-x-2 mt-8 text-gold hover:text-yellow-400 transition-colors animate-slide-up"
               style={{ animationDelay: '0.5s' }}
               aria-label="Contact us on WhatsApp"
             >
@@ -214,7 +214,7 @@ export default function Home() {
             alt="Modern office building"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-navy/95" />
+          <div className="absolute inset-0 bg-navy/85" />
         </div>
         <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <h2 className="text-section font-bold text-white mb-6">Ready to Get Started?</h2>

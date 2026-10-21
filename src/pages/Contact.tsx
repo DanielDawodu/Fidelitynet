@@ -1,9 +1,24 @@
 import { useState } from 'react';
-import { Phone, Mail, MessageCircle, MapPin, Send, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Phone, Mail, MessageCircle, MapPin, Send, CheckCircle2, AlertCircle, Building2 } from 'lucide-react';
 import { COMPANY_INFO, CONTACT_LINKS } from '../lib/constants';
 import type { ContactFormData } from '../types';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
+
+const OFFICES = [
+  {
+    city: 'Ijebu Ode',
+    address: '2, Alhaji Salamotu Library, Local Government Compound, Ijebu Ode',
+  },
+  {
+    city: 'Ibadan',
+    address: '10, Femi Johnson Street, Dugbe, Ibadan',
+  },
+  {
+    city: 'Lagos',
+    address: '22, Alagomeji Street, Yaba, Lagos',
+  },
+];
 
 export default function Contact() {
   const [formData, setFormData] = useState<ContactFormData>({
@@ -157,6 +172,24 @@ export default function Contact() {
                       Serving clients across Nigeria, including Ijebu-Ode, Ibadan, Lagos, and other locations.
                     </p>
                   </div>
+                </div>
+              </div>
+
+              {/* Office Locations */}
+              <div className="mt-12 pt-12 border-t border-gray-200">
+                <h2 className="text-section font-bold text-navy mb-8">Our Offices</h2>
+                <div className="space-y-6">
+                  {OFFICES.map((office, index) => (
+                    <div key={index} className="flex items-start space-x-4">
+                      <div className="w-14 h-14 bg-navy rounded-xl flex items-center justify-center flex-shrink-0">
+                        <Building2 className="w-7 h-7 text-gold" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-navy mb-1 text-lg">{office.city}</h3>
+                        <p className="text-gray-700">{office.address}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

@@ -37,9 +37,11 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo and Company Name */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-soft group-hover:shadow-gold transition-all duration-300">
-              <span className="text-navy font-bold text-xl">FG</span>
-            </div>
+            <img
+              src="/logo.png"
+              alt={COMPANY_INFO.name}
+              className="w-12 h-12 object-contain rounded-xl shadow-soft group-hover:shadow-gold transition-all duration-300"
+            />
             <div className="hidden sm:block">
               <h1 className="text-base lg:text-lg font-bold leading-tight text-white group-hover:text-gold transition-colors">
                 {COMPANY_INFO.name}

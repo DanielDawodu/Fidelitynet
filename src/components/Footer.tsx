@@ -12,9 +12,11 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-soft">
-                <span className="text-navy font-bold text-xl">FG</span>
-              </div>
+              <img
+                src="/logo.png"
+                alt={COMPANY_INFO.name}
+                className="w-12 h-12 object-contain rounded-xl shadow-soft"
+              />
               <div>
                 <h3 className="font-bold text-base leading-tight">{COMPANY_INFO.name}</h3>
                 <p className="text-xs text-gold font-medium tracking-wide">
