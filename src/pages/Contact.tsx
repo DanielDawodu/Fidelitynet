@@ -98,13 +98,15 @@ export default function Contact() {
             alt="Contact FidelityNet Global Services"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-overlay" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/40 via-navy/50 to-navy/60" />
         </div>
         <div className="relative container mx-auto px-4 lg:px-8">
-          <h1 className="text-hero font-bold text-white mb-6">Contact Us</h1>
-          <p className="text-subtitle text-gray-200 max-w-3xl">
-            Get in touch with {COMPANY_INFO.name}. We're here to help with your professional service needs.
-          </p>
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-hero font-bold text-white mb-6">Contact Us</h1>
+            <p className="text-subtitle text-gray-100">
+              Get in touch with {COMPANY_INFO.name}. We're here to help with your professional service needs.
+            </p>
+          </div>
         </div>
       </section>
 
