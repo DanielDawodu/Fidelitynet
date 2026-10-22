@@ -25,7 +25,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed mb-6">
-              Professional solutions for compliance, real estate, construction, training and business support.
+              Professional solutions for compliance, real estate, construction and business support.
             </p>
             <div className="flex space-x-4">
               <a
@@ -98,9 +98,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-300">
               <li key="compliance-advisory">Compliance Advisory</li>
               <li key="real-estate-management">Real Estate Management</li>
-              <li key="study-abroad">Study Abroad & Visa Services</li>
-              <li key="hr-management">Human Resources Management</li>
-              <li key="business-services">Business Services</li>
+              <li key="business-services">Business and Corporate Services</li>
             </ul>
           </div>
 

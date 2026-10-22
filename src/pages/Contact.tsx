@@ -86,7 +86,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contact Us"
-        description="Get in touch with FidelityNet Global Services. Contact us via phone, WhatsApp, or email for professional consulting, real estate, construction, training, and business support services in Nigeria."
+        description="Get in touch with FidelityNet Global Services. Contact us via phone, WhatsApp, or email for professional consulting, real estate, construction, and business support services in Nigeria."
         path="/contact"
       />
       <div className="bg-light min-h-screen">
@@ -277,8 +277,6 @@ export default function Contact() {
                     <option value="">Select a service category</option>
                     <option value="compliance-advisory">Compliance Advisory</option>
                     <option value="real-estate-management">Real Estate Management</option>
-                    <option value="study-abroad">Study Abroad and Visa Services</option>
-                    <option value="hr-management">Human Resources Management</option>
                     <option value="business-services">Business and Corporate Services</option>
                     <option value="other">Other</option>
                   </select>

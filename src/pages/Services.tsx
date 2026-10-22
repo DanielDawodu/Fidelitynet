@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MessageCircle, Scale, Building2, GraduationCap, Users, Briefcase, ArrowRight } from 'lucide-react';
+import { MessageCircle, Scale, Building2, Briefcase, ArrowRight } from 'lucide-react';
 import { CONTACT_LINKS, SERVICES } from '../lib/constants';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
@@ -7,16 +7,12 @@ import Button from '../components/Button';
 const iconMap: Record<string, React.ElementType> = {
   Scale,
   Building2,
-  GraduationCap,
-  Users,
   Briefcase,
 };
 
 const serviceImages: Record<string, string> = {
   'compliance-advisory': '/images/consulting.jpg',
   'real-estate-management': '/images/construction.jpg',
-  'study-abroad': '/images/study-abroad.jpg',
-  'hr-management': '/images/training.jpg',
   'business-services': '/images/business.jpg',
 };
 
@@ -25,7 +21,7 @@ export default function Services() {
     <>
       <SEO
         title="Our Services"
-        description="Discover FidelityNet Global Services' comprehensive professional solutions including real estate management, compliance advisory, human resources management, study abroad and visa services, and business support."
+        description="Discover FidelityNet Global Services' comprehensive professional solutions including real estate management, compliance advisory, and business and corporate services."
         path="/services"
       />
       <div className="bg-light min-h-screen">

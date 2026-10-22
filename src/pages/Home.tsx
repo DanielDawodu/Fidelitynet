@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Phone, MessageCircle, CheckCircle2, Scale, Building2, Users } from 'lucide-react';
+import { ArrowRight, Phone, MessageCircle, CheckCircle2, Scale, Building2, Briefcase } from 'lucide-react';
 import { COMPANY_INFO, CONTACT_LINKS, MAJOR_SERVICES, WHY_CHOOSE_US, HOW_WE_WORK } from '../lib/constants';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
@@ -8,13 +8,13 @@ import HeroCarousel from '../components/HeroCarousel';
 const iconMap: Record<string, React.ElementType> = {
   Scale,
   Building2,
-  Users,
+  Briefcase,
 };
 
 const serviceImages: Record<string, string> = {
   'compliance-advisory': '/images/consulting.jpg',
   'real-estate-management': '/images/construction.jpg',
-  'hr-management': '/images/training.jpg',
+  'business-services': '/images/business.jpg',
 };
 
 const carouselSlides = [
@@ -27,8 +27,8 @@ const carouselSlides = [
     alt: 'Modern real estate and property management',
   },
   {
-    image: '/images/carousel-hr.jpg',
-    alt: 'Human resources management and team consultation',
+    image: '/images/consulting.jpg',
+    alt: 'Business and corporate services consultation',
   },
 ];
 
@@ -37,7 +37,7 @@ export default function Home() {
     <>
       <SEO
         title="Professional Solutions in Nigeria"
-        description="Explore FidelityNet Global Services for real estate management, compliance advisory, human resources management, building construction and property maintenance in Nigeria."
+        description="Explore FidelityNet Global Services for real estate management, compliance advisory, business and corporate services, building construction and property maintenance in Nigeria."
         path="/"
       />
       <div className="bg-light">
@@ -59,7 +59,7 @@ export default function Home() {
               {COMPANY_INFO.tagline}
             </h1>
             <p className="text-subtitle text-gray-100 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              Practical solutions for compliance, real estate, construction, training and business support.
+              Practical solutions for compliance, real estate, construction and business support.
             </p>
             <p className="text-base text-gray-200 mb-10 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.3s' }}>
               {COMPANY_INFO.name} works with individuals, businesses, property owners and organisations to understand their requirements and provide practical, professional services tailored to their needs.

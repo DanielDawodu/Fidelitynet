@@ -42,7 +42,7 @@ export default function About() {
             <div>
               <h2 className="text-section font-bold text-navy mb-6">Who We Are</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                {COMPANY_INFO.name} provides a range of professional solutions across consulting and compliance, real estate and construction, training, and business support. We aim to understand each client's requirements and provide practical services through clear communication, careful planning, and a professional approach.
+                {COMPANY_INFO.name} provides a range of professional solutions across consulting and compliance, real estate and construction, and business support. We aim to understand each client's requirements and provide practical services through clear communication, careful planning, and a professional approach.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Our team is dedicated to delivering quality service that addresses the unique needs of individuals, businesses, and organisations across Nigeria.
