@@ -222,11 +222,11 @@ export default function Home() {
             Let's discuss your project or business requirements and find the right solution for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link to="/contact">
+            <a href={CONTACT_LINKS.whatsapp} target="_blank" rel="noopener noreferrer">
               <Button variant="gold" size="lg">
                 Request a Consultation
               </Button>
-            </Link>
+            </a>
             <a href={CONTACT_LINKS.phone}>
               <Button variant="secondary" size="lg" icon={<Phone className="w-5 h-5" />}>
                 Call {COMPANY_INFO.phone}

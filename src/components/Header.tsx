@@ -70,7 +70,7 @@ export default function Header() {
                 )}
               </Link>
             ))}
-            <a href={CONTACT_LINKS.phone}>
+            <a href={CONTACT_LINKS.whatsapp} target="_blank" rel="noopener noreferrer">
               <Button variant="gold" size="sm" icon={<Phone className="w-4 h-4" />}>
                 Request a Consultation
               </Button>
@@ -104,7 +104,7 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <a href={CONTACT_LINKS.phone} onClick={() => setIsOpen(false)}>
+              <a href={CONTACT_LINKS.whatsapp} onClick={() => setIsOpen(false)} target="_blank" rel="noopener noreferrer">
                 <Button variant="gold" size="md" icon={<Phone className="w-4 h-4" />} className="w-full">
                   Request a Consultation
                 </Button>

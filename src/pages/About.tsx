@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Award, Target, Heart, Shield, Star, TrendingUp, ArrowRight } from 'lucide-react';
-import { COMPANY_INFO, CORE_VALUES } from '../lib/constants';
+import { CORE_VALUES } from '../lib/constants';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
 
@@ -42,7 +42,7 @@ export default function About() {
             <div>
               <h2 className="text-section font-bold text-navy mb-6">Who We Are</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                {COMPANY_INFO.name} provides a range of professional solutions across consulting and compliance, real estate and construction, and business support. We aim to understand each client's requirements and provide practical services through clear communication, careful planning, and a professional approach.
+                FidelityNet Global Services provides a range of professional solutions across real estate and construction, and consulting and compliance. We aim to understand each client's requirements and provide practical services through clear communication, careful planning, and a professional approach.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Our team is dedicated to delivering quality service that addresses the unique needs of individuals, businesses, and organisations across Nigeria.
@@ -54,6 +54,20 @@ export default function About() {
                 alt="Our professional team"
                 className="rounded-2xl shadow-elevated w-full"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Strategy */}
+      <section className="py-24 bg-light">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-soft p-12">
+              <h2 className="text-3xl font-bold text-navy mb-6">Our Strategy</h2>
+              <p className="text-lg text-gray-700 leading-relaxed font-bold">
+                At FidelityNet Global Services, our strategy is guided by a deep commitment to delivering value to our customers, shareholders, and communities across Africa and beyond.
+              </p>
             </div>
           </div>
         </div>
