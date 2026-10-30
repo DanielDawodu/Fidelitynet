@@ -11,9 +11,9 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 const serviceImages: Record<string, string> = {
-  'compliance-advisory': '/images/consulting.jpg',
-  'real-estate-management': '/images/construction.jpg',
-  'business-services': '/images/business.jpg',
+  'compliance-advisory': '/images/consulting-african.jpg',
+  'real-estate-management': '/images/construction-african.jpg',
+  'business-services': '/images/business-african.jpg',
 };
 
 export default function Services() {

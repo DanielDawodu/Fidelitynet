@@ -60,11 +60,18 @@ export default function About() {
       </section>
 
       {/* Our Strategy */}
-      <section className="py-24 bg-light">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-soft p-12">
-              <h2 className="text-3xl font-bold text-navy mb-6">Our Strategy</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <img
+                src="/images/strategy-african.jpg"
+                alt="Our strategy and business planning"
+                className="rounded-2xl shadow-elevated w-full"
+              />
+            </div>
+            <div>
+              <h2 className="text-section font-bold text-navy mb-6">Our Strategy</h2>
               <p className="text-lg text-gray-700 leading-relaxed font-bold">
                 At FidelityNet Global Services, our strategy is guided by a deep commitment to delivering value to our customers, shareholders, and communities across Africa and beyond.
               </p>

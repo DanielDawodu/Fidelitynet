@@ -12,22 +12,22 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 const serviceImages: Record<string, string> = {
-  'compliance-advisory': '/images/consulting.jpg',
-  'real-estate-management': '/images/construction.jpg',
-  'business-services': '/images/business.jpg',
+  'compliance-advisory': '/images/consulting-african.jpg',
+  'real-estate-management': '/images/construction-african.jpg',
+  'business-services': '/images/business-african-team.jpg',
 };
 
 const carouselSlides = [
   {
-    image: '/images/carousel-compliance.jpg',
+    image: '/images/consulting-african.jpg',
     alt: 'Professional compliance advisory meeting',
   },
   {
-    image: '/images/carousel-realestate.jpg',
+    image: '/images/construction-african.jpg',
     alt: 'Modern real estate and property management',
   },
   {
-    image: '/images/consulting.jpg',
+    image: '/images/business-african.jpg',
     alt: 'Business and corporate services consultation',
   },
 ];
