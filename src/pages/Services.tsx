@@ -11,9 +11,9 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 const serviceImages: Record<string, string> = {
-  'compliance-advisory': '/images/consulting.jpg',
-  'real-estate-management': '/images/construction.jpg',
-  'business-services': '/images/business.jpg',
+  'compliance-advisory': '/images/consulting-african.jpg',
+  'real-estate-management': '/images/construction-african.jpg',
+  'business-services': '/images/business-african.jpg',
 };
 
 export default function Services() {
@@ -77,6 +77,19 @@ export default function Services() {
                     <h2 className="text-3xl font-bold text-navy">{service.title}</h2>
                   </div>
                   <p className="text-lg text-gray-600 mb-8">{service.description}</p>
+
+                  {/* Display offerings if they exist */}
+                  {service.offerings && service.offerings.length > 0 && (
+                    <div className="mb-8 space-y-6">
+                      {service.offerings.map((offering, offeringIndex) => (
+                        <div key={offeringIndex} className="bg-white p-6 rounded-xl border border-gray-200 shadow-soft">
+                          <h3 className="text-xl font-bold text-navy mb-3">{offering.heading}</h3>
+                          <p className="text-gray-700">{offering.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
                     {service.items.map((item: string, itemIndex: number) => (
                       <li key={itemIndex} className="flex items-start space-x-2">
@@ -110,11 +123,11 @@ export default function Services() {
                 Contact Us
               </Button>
             </Link>
-            <Link to="/contact">
+            <a href={CONTACT_LINKS.whatsapp} target="_blank" rel="noopener noreferrer">
               <Button variant="secondary" size="lg">
                 Request a Consultation
               </Button>
-            </Link>
+            </a>
             <a href={CONTACT_LINKS.whatsapp}>
               <Button variant="secondary" size="lg" icon={<MessageCircle className="w-5 h-5" />}>
                 WhatsApp

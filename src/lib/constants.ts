@@ -51,6 +51,28 @@ export const SERVICES: Service[] = [
       'Lease management',
       'Property-related regulatory guidance',
     ],
+    offerings: [
+      {
+        heading: 'Building Construction',
+        description: 'Construction solutions tailored to project requirements, specifications and budgets.',
+      },
+      {
+        heading: 'Renovation and Refurbishment',
+        description: 'Improving and updating residential and commercial spaces to meet clients\' needs.',
+      },
+      {
+        heading: 'Property Maintenance',
+        description: 'Maintenance and repair services designed to help keep properties functional, safe and presentable.',
+      },
+      {
+        heading: 'Construction Consultancy',
+        description: 'Practical support with project planning, cost estimates, materials coordination and construction-related decisions, according to the agreed scope of work.',
+      },
+      {
+        heading: 'General Contracting and Related Services',
+        description: 'Additional construction-related services based on project requirements and the company\'s capabilities.',
+      },
+    ],
   },
   {
     id: 'business-services',
@@ -85,6 +107,28 @@ export const MAJOR_SERVICES: Service[] = [
       'Property acquisition support',
       'Lease management',
       'Property-related regulatory guidance',
+    ],
+    offerings: [
+      {
+        heading: 'Building Construction',
+        description: 'Construction solutions tailored to project requirements, specifications and budgets.',
+      },
+      {
+        heading: 'Renovation and Refurbishment',
+        description: 'Improving and updating residential and commercial spaces to meet clients\' needs.',
+      },
+      {
+        heading: 'Property Maintenance',
+        description: 'Maintenance and repair services designed to help keep properties functional, safe and presentable.',
+      },
+      {
+        heading: 'Construction Consultancy',
+        description: 'Practical support with project planning, cost estimates, materials coordination and construction-related decisions, according to the agreed scope of work.',
+      },
+      {
+        heading: 'General Contracting and Related Services',
+        description: 'Additional construction-related services based on project requirements and the company\'s capabilities.',
+      },
     ],
   },
   {

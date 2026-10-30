@@ -4,6 +4,10 @@ export interface Service {
   description: string;
   icon: string;
   items: string[];
+  offerings?: {
+    heading: string;
+    description: string;
+  }[];
 }
 
 export interface ContactFormData {
