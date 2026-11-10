@@ -8,6 +8,7 @@ export interface Service {
     heading: string;
     description: string;
   }[];
+  hidden?: boolean;
 }
 
 export interface ContactFormData {

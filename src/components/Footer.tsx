@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
-import { COMPANY_INFO, CONTACT_LINKS } from '../lib/constants';
+import { COMPANY_INFO, CONTACT_LINKS, VISIBLE_SERVICES } from '../lib/constants';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -95,10 +95,18 @@ export default function Footer() {
             <h4 className="font-semibold mb-6 text-gold text-sm uppercase tracking-wider">
               Our Services
             </h4>
-            <ul className="space-y-3 text-sm text-gray-300">
-              <li key="compliance-advisory">Compliance Advisory</li>
-              <li key="real-estate-management">Real Estate Management</li>
-              <li key="business-services">Business and Corporate Services</li>
+            <ul className="space-y-3">
+              {VISIBLE_SERVICES.map((service) => (
+                <li key={service.id}>
+                  <Link
+                    to={`/services#${service.id}`}
+                    className="text-sm text-gray-300 hover:text-gold transition-colors inline-flex items-center group"
+                  >
+                    <span className="w-0 group-hover:w-2 h-0.5 bg-gold mr-0 group-hover:mr-2 transition-all duration-300" />
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

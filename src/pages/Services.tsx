@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { MessageCircle, Scale, Building2, Briefcase, ArrowRight } from 'lucide-react';
-import { CONTACT_LINKS, SERVICES } from '../lib/constants';
+import { CONTACT_LINKS, VISIBLE_SERVICES } from '../lib/constants';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
 
@@ -21,7 +21,7 @@ export default function Services() {
     <>
       <SEO
         title="Our Services"
-        description="Discover FidelityNet Global Services' comprehensive professional solutions including real estate management, compliance advisory, and business and corporate services."
+        description="Discover FidelityNet Global Services' comprehensive professional solutions including real estate management and compliance advisory."
         path="/services"
       />
       <div className="bg-light min-h-screen">
@@ -48,7 +48,7 @@ export default function Services() {
       {/* Services Content */}
       <section className="py-24">
         <div className="container mx-auto px-4 lg:px-8">
-          {SERVICES.map((service, index) => {
+          {VISIBLE_SERVICES.map((service, index) => {
             const IconComponent = iconMap[service.icon];
             const imageUrl = serviceImages[service.id];
             const isEven = index % 2 === 0;
@@ -57,7 +57,7 @@ export default function Services() {
                 key={service.id}
                 id={service.id}
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 scroll-mt-24 ${
-                  index === SERVICES.length - 1 ? '' : 'lg:mb-24'
+                  index === VISIBLE_SERVICES.length - 1 ? '' : 'lg:mb-24'
                 }`}
               >
                 <div className={isEven ? 'order-1' : 'order-2'}>

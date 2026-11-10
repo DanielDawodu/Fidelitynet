@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Phone, MessageCircle, CheckCircle2, Scale, Building2, Briefcase } from 'lucide-react';
-import { COMPANY_INFO, CONTACT_LINKS, MAJOR_SERVICES, WHY_CHOOSE_US, HOW_WE_WORK } from '../lib/constants';
+import { COMPANY_INFO, CONTACT_LINKS, VISIBLE_MAJOR_SERVICES, WHY_CHOOSE_US, HOW_WE_WORK } from '../lib/constants';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
 import HeroCarousel from '../components/HeroCarousel';
@@ -26,10 +26,6 @@ const carouselSlides = [
     image: '/images/construction-african.jpg',
     alt: 'Modern real estate and property management',
   },
-  {
-    image: '/images/business-african.jpg',
-    alt: 'Business and corporate services consultation',
-  },
 ];
 
 export default function Home() {
@@ -37,7 +33,7 @@ export default function Home() {
     <>
       <SEO
         title="Professional Solutions in Nigeria"
-        description="Explore FidelityNet Global Services for real estate management, compliance advisory, business and corporate services, building construction and property maintenance in Nigeria."
+        description="Explore FidelityNet Global Services for real estate management, compliance advisory, building construction and property maintenance in Nigeria."
         path="/"
       />
       <div className="bg-light">
@@ -89,7 +85,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Overview - 3 Major Services Only */}
+      {/* Services Overview */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
@@ -98,8 +94,8 @@ export default function Home() {
               Comprehensive professional solutions tailored to your needs
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {MAJOR_SERVICES.map((service) => {
+          <div className={`grid grid-cols-1 md:grid-cols-2 ${VISIBLE_MAJOR_SERVICES.length > 2 ? 'lg:grid-cols-3' : 'max-w-4xl mx-auto'} gap-8 mb-12`}>
+            {VISIBLE_MAJOR_SERVICES.map((service) => {
               const IconComponent = iconMap[service.icon];
               const imageUrl = serviceImages[service.id];
               return (

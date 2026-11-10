@@ -52,7 +52,7 @@ export default function About() {
               <img
                 src="/images/why-choose-us.jpg"
                 alt="Our professional team"
-                className="rounded-2xl shadow-elevated w-full"
+                className="rounded-2xl shadow-elevated w-full aspect-[3/2] object-cover"
               />
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function About() {
               <img
                 src="/images/strategy-african.jpg"
                 alt="Our strategy and business planning"
-                className="rounded-2xl shadow-elevated w-full"
+                className="rounded-2xl shadow-elevated w-full aspect-[3/2] object-cover"
               />
             </div>
             <div>

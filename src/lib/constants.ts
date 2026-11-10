@@ -18,22 +18,6 @@ export const CONTACT_LINKS = {
 
 export const SERVICES: Service[] = [
   {
-    id: 'compliance-advisory',
-    title: 'Compliance Advisory',
-    description: 'Comprehensive compliance advisory, risk assessment, and regulatory support services.',
-    icon: 'Scale',
-    items: [
-      'Compliance advisory',
-      'Risk assessment and audits',
-      'Policy and procedure development',
-      'Financial services compliance support',
-      'Regulatory support and reporting assistance',
-      'Corporate governance compliance',
-      'Governance solutions',
-      'Business and organisational policy support',
-    ],
-  },
-  {
     id: 'real-estate-management',
     title: 'Real Estate Management',
     description: 'Practical property and construction solutions, from project planning to maintenance.',
@@ -75,10 +59,27 @@ export const SERVICES: Service[] = [
     ],
   },
   {
+    id: 'compliance-advisory',
+    title: 'Compliance Advisory',
+    description: 'Comprehensive compliance advisory, risk assessment, and regulatory support services.',
+    icon: 'Scale',
+    items: [
+      'Compliance advisory',
+      'Risk assessment and audits',
+      'Policy and procedure development',
+      'Financial services compliance support',
+      'Regulatory support and reporting assistance',
+      'Corporate governance compliance',
+      'Governance solutions',
+      'Business and organisational policy support',
+    ],
+  },
+  {
     id: 'business-services',
     title: 'Business and Corporate Services',
     description: 'Comprehensive business support services for corporate needs.',
     icon: 'Briefcase',
+    hidden: true,
     items: [
       'Franchising and retail-related business support',
       'Corporate services',
@@ -86,7 +87,7 @@ export const SERVICES: Service[] = [
       'Related business support services',
     ],
   },
-] as const;
+];
 
 // Major services for homepage showcase
 export const MAJOR_SERVICES: Service[] = [
@@ -152,6 +153,7 @@ export const MAJOR_SERVICES: Service[] = [
     title: 'Business and Corporate Services',
     description: 'Comprehensive business support services for corporate needs.',
     icon: 'Briefcase',
+    hidden: true,
     items: [
       'Franchising and retail-related business support',
       'Corporate services',
@@ -159,7 +161,11 @@ export const MAJOR_SERVICES: Service[] = [
       'Related business support services',
     ],
   },
-] as const;
+];
+
+// Publicly visible services (automatically excludes temporarily hidden categories)
+export const VISIBLE_SERVICES: Service[] = SERVICES.filter((service) => !service.hidden);
+export const VISIBLE_MAJOR_SERVICES: Service[] = MAJOR_SERVICES.filter((service) => !service.hidden);
 
 export const CORE_VALUES = [
   'Integrity',
