@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Phone, Mail, MessageCircle, MapPin, Send, CheckCircle2, AlertCircle, Building2 } from 'lucide-react';
-import { COMPANY_INFO, CONTACT_LINKS } from '../lib/constants';
+import { COMPANY_INFO, CONTACT_LINKS, VISIBLE_SERVICES } from '../lib/constants';
 import type { ContactFormData } from '../types';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
@@ -86,7 +86,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contact Us"
-        description="Get in touch with FidelityNet Global Services. Contact us via phone, WhatsApp, or email for professional consulting, real estate, construction, and business support services in Nigeria."
+        description="Get in touch with FidelityNet Global Services. Contact us via phone, WhatsApp, or email for professional real estate management, construction consultancy, and compliance advisory services in Nigeria."
         path="/contact"
       />
       <div className="bg-light min-h-screen">
@@ -275,9 +275,11 @@ export default function Contact() {
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-navy focus:border-transparent outline-none transition-all"
                   >
                     <option value="">Select a service category</option>
-                    <option value="compliance-advisory">Compliance Advisory</option>
-                    <option value="real-estate-management">Real Estate Management</option>
-                    <option value="business-services">Business and Corporate Services</option>
+                    {VISIBLE_SERVICES.map((service) => (
+                      <option key={service.id} value={service.id}>
+                        {service.title}
+                      </option>
+                    ))}
                     <option value="other">Other</option>
                   </select>
                 </div>
