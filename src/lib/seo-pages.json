@@ -1,0 +1,22 @@
+{
+  "home": {
+    "path": "/",
+    "title": "Real Estate & Compliance in Nigeria",
+    "description": "FidelityNet Global Services offers real estate management, building construction, property maintenance and compliance advisory in Ijebu Ode, Ibadan, Lagos and across Nigeria."
+  },
+  "services": {
+    "path": "/services",
+    "title": "Our Services",
+    "description": "Real estate management, building construction, renovation, property maintenance and compliance advisory from FidelityNet Global Services in Nigeria."
+  },
+  "about": {
+    "path": "/about",
+    "title": "About Us",
+    "description": "Learn about FidelityNet Global Services' mission, vision and core values. Practical, client-focused professional services across Nigeria."
+  },
+  "contact": {
+    "path": "/contact",
+    "title": "Contact Us",
+    "description": "Contact FidelityNet Global Services by phone, WhatsApp or email. Offices in Ijebu Ode, Ibadan and Lagos for real estate, construction and compliance support."
+  }
+}

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { MessageCircle, Scale, Building2, Briefcase, ArrowRight } from 'lucide-react';
 import { CONTACT_LINKS, VISIBLE_SERVICES } from '../lib/constants';
 import SEO from '../components/SEO';
+import seoPages from '../lib/seo-pages.json';
 import Button from '../components/Button';
 
 const iconMap: Record<string, React.ElementType> = {
@@ -19,11 +20,7 @@ const serviceImages: Record<string, string> = {
 export default function Services() {
   return (
     <>
-      <SEO
-        title="Our Services"
-        description="Discover FidelityNet Global Services' comprehensive professional solutions including real estate management and compliance advisory."
-        path="/services"
-      />
+      <SEO {...seoPages.services} />
       <div className="bg-light min-h-screen">
       {/* Page Header */}
       <section className="relative py-32 overflow-hidden">

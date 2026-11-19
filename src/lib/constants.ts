@@ -16,6 +16,24 @@ export const CONTACT_LINKS = {
   email: `mailto:info@fidellitynetglobalservices.online`,
 } as const;
 
+export const OFFICES = [
+  {
+    city: 'Ijebu Ode',
+    address: '2, Alhaji Salamotu Library, Local Government Compound, Ijebu Ode',
+    region: 'Ogun State',
+  },
+  {
+    city: 'Ibadan',
+    address: '10, Femi Johnson Street, Dugbe, Ibadan',
+    region: 'Oyo State',
+  },
+  {
+    city: 'Lagos',
+    address: '22, Alagomeji Street, Yaba, Lagos',
+    region: 'Lagos State',
+  },
+] as const;
+
 export const SERVICES: Service[] = [
   {
     id: 'real-estate-management',
