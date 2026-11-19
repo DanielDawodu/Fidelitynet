@@ -12,6 +12,7 @@ interface SEOProps {
 const SITE_NAME = COMPANY_INFO.name;
 const ORG_ID = `${COMPANY_INFO.domain}/#organization`;
 const WEBSITE_ID = `${COMPANY_INFO.domain}/#website`;
+const ALTERNATE_NAMES = ['FidelityNet', 'Fidellity Net Global Services', 'Fidellitynet Global Services'];
 
 const PAGE_NAMES: Record<string, string> = {
   '/services': 'Services',
@@ -24,6 +25,7 @@ function buildOrganization() {
     '@type': ['ProfessionalService', 'Organization'],
     '@id': ORG_ID,
     name: SITE_NAME,
+    alternateName: ALTERNATE_NAMES,
     url: COMPANY_INFO.domain,
     logo: `${COMPANY_INFO.domain}/logo.png`,
     image: `${COMPANY_INFO.domain}/og-image.jpg`,
@@ -65,6 +67,7 @@ export default function SEO({ title, description, path, ogImage, noindex = false
       '@id': WEBSITE_ID,
       url: COMPANY_INFO.domain,
       name: SITE_NAME,
+      alternateName: ALTERNATE_NAMES,
       inLanguage: 'en-NG',
       publisher: { '@id': ORG_ID },
     });
