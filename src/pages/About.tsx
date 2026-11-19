@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Award, Target, Heart, Shield, Star, TrendingUp, ArrowRight } from 'lucide-react';
 import { CORE_VALUES } from '../lib/constants';
 import SEO from '../components/SEO';
+import seoPages from '../lib/seo-pages.json';
 import Button from '../components/Button';
 
 export default function About() {
@@ -9,11 +10,7 @@ export default function About() {
 
   return (
     <>
-      <SEO
-        title="About Us"
-        description="Learn about FidelityNet Global Services' mission, vision, and core values. We provide practical, client-focused professional services across Nigeria."
-        path="/about"
-      />
+      <SEO {...seoPages.about} />
       <div className="bg-light min-h-screen">
       {/* Page Header */}
       <section className="relative py-32 overflow-hidden">

@@ -1,24 +1,10 @@
 import { useState } from 'react';
 import { Phone, Mail, MessageCircle, MapPin, Send, CheckCircle2, AlertCircle, Building2 } from 'lucide-react';
-import { COMPANY_INFO, CONTACT_LINKS, VISIBLE_SERVICES } from '../lib/constants';
+import { COMPANY_INFO, CONTACT_LINKS, OFFICES, VISIBLE_SERVICES } from '../lib/constants';
+import seoPages from '../lib/seo-pages.json';
 import type { ContactFormData } from '../types';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-
-const OFFICES = [
-  {
-    city: 'Ijebu Ode',
-    address: '2, Alhaji Salamotu Library, Local Government Compound, Ijebu Ode',
-  },
-  {
-    city: 'Ibadan',
-    address: '10, Femi Johnson Street, Dugbe, Ibadan',
-  },
-  {
-    city: 'Lagos',
-    address: '22, Alagomeji Street, Yaba, Lagos',
-  },
-];
 
 export default function Contact() {
   const [formData, setFormData] = useState<ContactFormData>({
@@ -84,11 +70,7 @@ export default function Contact() {
 
   return (
     <>
-      <SEO
-        title="Contact Us"
-        description="Get in touch with FidelityNet Global Services. Contact us via phone, WhatsApp, or email for professional real estate management, construction consultancy, and compliance advisory services in Nigeria."
-        path="/contact"
-      />
+      <SEO {...seoPages.contact} />
       <div className="bg-light min-h-screen">
       {/* Page Header */}
       <section className="relative py-32 overflow-hidden">

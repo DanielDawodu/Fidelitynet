@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Phone, MessageCircle, CheckCircle2, Scale, Building2, Briefcase } from 'lucide-react';
 import { COMPANY_INFO, CONTACT_LINKS, VISIBLE_MAJOR_SERVICES, WHY_CHOOSE_US, HOW_WE_WORK } from '../lib/constants';
 import SEO from '../components/SEO';
+import seoPages from '../lib/seo-pages.json';
 import Button from '../components/Button';
 import HeroCarousel from '../components/HeroCarousel';
 
@@ -31,11 +32,7 @@ const carouselSlides = [
 export default function Home() {
   return (
     <>
-      <SEO
-        title="Professional Solutions in Nigeria"
-        description="Explore FidelityNet Global Services for real estate management, compliance advisory, building construction and property maintenance in Nigeria."
-        path="/"
-      />
+      <SEO {...seoPages.home} />
       <div className="bg-light">
       {/* Hero Section */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">

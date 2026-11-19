@@ -10,6 +10,7 @@ export default function NotFound() {
         title="Page Not Found"
         description="The page you are looking for does not exist on FidelityNet Global Services."
         path="/404"
+        noindex
       />
       <div className="bg-light flex items-center justify-center px-4 py-32 min-h-[60vh]">
         <div className="text-center max-w-2xl">
